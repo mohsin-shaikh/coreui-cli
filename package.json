@@ -1,6 +1,6 @@
 {
   "name": "@coreui/cli",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "A command line interface to setup CoreUI with Tailwind CSS v4.1 support",
   "main": "dist/index.js",
   "type": "module",
@@ -16,7 +16,7 @@
   "bin": "./dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coreui/cli"
+    "url": "git+https://github.com/mohsin-shaikh/coreui-cli"
   },
   "keywords": [
     "cli",
@@ -26,12 +26,12 @@
   "files": [
     "dist"
   ],
-  "author": "tolunaydonmez",
+  "author": "Mohsin Shaikh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coreui/cli/issues"
+    "url": "https://github.com/mohsin-shaikh/coreui-cli/issues"
   },
-  "homepage": "https://coreui.com",
+  "homepage": "https://mohsin-shaikh.github.io/coreui/",
   "dependencies": {
     "@antfu/ni": "^0.22.4",
     "@babel/core": "^7.25.2",
