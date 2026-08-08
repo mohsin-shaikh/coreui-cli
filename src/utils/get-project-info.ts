@@ -49,10 +49,11 @@ export async function getTailwindCssFile(cwd: string) {
 
   for (const file of files) {
     const contents = await fs.readFile(path.resolve(cwd, file), 'utf8');
-    // Check for both v3 (@tailwind base) and v4 (@import "tailwindcss") formats
+    // Check for both v3 (@tailwind base) and v4 (@import "tailwindcss" / @import 'tailwindcss') formats
     if (
       contents.includes('@tailwind base') ||
-      contents.includes('@import "tailwindcss"')
+      contents.includes('@import "tailwindcss"') ||
+      contents.includes("@import 'tailwindcss'")
     ) {
       return file;
     }
